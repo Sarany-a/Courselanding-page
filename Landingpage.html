@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Landing Page</title>
+  <style>
+   
+   body{
+  
+    border: #30d6c6;
+   }
+    h2{
+      font-variant-caps:titling-caps;
+     font-style:italic; 
+    font-size:large ;
+    }
+    .card-container {
+      display: flex;
+      overflow-z: hidden;
+      width: 100%;
+      height: 50%;
+      
+    }
+    .card {
+      flex: 0 0 auto;
+      width: 300px; 
+      margin: 0 10px;
+      background-color: #30d6c6;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease;
+    }
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-title {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .card-description {
+      font-size: 14px;
+      color: #666;
+    }
+    span{
+      content: "\20BD";
+    }
+    .learn-more {
+      
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      color: #007bff;
+      margin-top: 10px;
+      bottom: 50%;
+    }
+    button{
+      background-color: black;
+      
+      color:blue;
+      border-color: aqua ;
+    }
+    img{
+     transition:inherit;
+      width: 90%;
+    }
+    .img1{
+      width: 110%;
+      heigth:110%
+    }
+    .img2{
+      width: 110%;
+      height: 20%;
+    }
+    .img3{
+      width: 110%;
+    }
+    .img4{
+      width: 110%;
+    }
+    .img5{
+      width:109%;
+    }
+  </style>
+</head>
+<body>
+  <div class="card-container">
+    
+    <div class="card">
+      <div class="card-content">
+        <div class="img1">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\js1.jpg">
+        <h2 class="card-title">Html,Css,Javascript</h2>
+        <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae a dolorum dicta, eius cumque quis.</p>
+        <p style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+    <div class="card-container">
+      
+      <div class="card">
+        <div class="card-content">
+          <div class="img2">
+          <img src="C:\Users\lokes\OneDrive\Desktop\html\java.png">
+          <h2 class="card-title">Java Fullstack</h2>
+          <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, sed maiores reiciendis dolorem laborum nostrum!</p>
+         
+          <p  style="color:black;">Price:<span>&#8377;</span>2334</p> <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="card">
+      <div class="card-content">
+        <div class="img3">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\python2.png">
+        <h2 class="card-title">Python </h2>
+        <p class="card-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga veritatis explicabo necessitatibus ipsa, praesentium fugit!</p>
+        <p  style="color:black;" >Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="img4">
+        <img src="C:\Users\lokes\OneDrive\Desktop\html\react.png">
+        <h2 class="card-title">React</h2>
+        <p class="card-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid quo id aperiam accusamus obcaecati impedit!</p>
+        <p  style="color:black;" >Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.linkedin.com/company/geekbase-technology/?lipi=urn%3Ali%3Apage%3Ad_UNKNOWN_ROUTE_search.results.generic.index%3Bephd%2FQDGSPqhRcmOE%2BNfdQ%3D%3D" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+    <div class="card">
+      <div class="card-content">
+        <div class="img5">
+        <h2 class="card-title">
+          <img src="C:\Users\lokes\OneDrive\Desktop\html\devops 2.png" > DevOps</h2>
+        <p class="card-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic quidem, officia impedit soluta veritatis porro!</p>
+       <p  style="color:black;">Price:<span>&#8377;</span>2334</p>
+        <a href="https://www.toptal.com/" class="learn-more"><button>Learn More</button></a>
+      </div>
+    </div>
+  </div>
+    
+   
+  </div>
+
+  <script>
+  
+    const cardContainer = document.querySelector('.card-container');
+    const cards = document.querySelectorAll('.card');
+    let currentIndex = 0;
+    const cardWidth = cards[0].offsetWidth;
+    const numCards = cards.length;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % numCards;
+      cardContainer.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
+    }, 900);
+  </script>
+</body>
+</html>
